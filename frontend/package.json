@@ -10,24 +10,29 @@
     "lint": "run-s \"lint:*\"",
     "lint:oxlint": "oxlint . --fix",
     "lint:eslint": "eslint . --fix --cache",
-    "format": "prettier --write --experimental-cli src/"
+    "format": "prettier --write --experimental-cli src/",
+    "test": "vitest run"
   },
   "dependencies": {
-    "vue": "^3.5.40"
+    "vue": "^3.5.40",
+    "vue-router": "^4.6.4"
   },
   "devDependencies": {
     "@eslint/js": "^10.0.1",
     "@vitejs/plugin-vue": "^6.0.8",
+    "@vue/test-utils": "^2.5.1",
     "eslint": "^10.7.0",
     "eslint-config-prettier": "^10.1.8",
     "eslint-plugin-oxlint": "~1.73.0",
     "eslint-plugin-vue": "~10.9.2",
     "globals": "^17.7.0",
+    "jsdom": "^30.1.1",
     "npm-run-all2": "^9.0.2",
     "oxlint": "~1.74.0",
     "prettier": "3.9.5",
     "vite": "^8.1.5",
     "vite-plugin-vue-devtools": "^8.1.5",
+    "vitest": "^5.0.2",
     "vue-eslint-parser": "^10.4.1"
   },
   "engines": {
